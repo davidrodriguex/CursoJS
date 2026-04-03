@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Starting DOM</title>
+    <style>
+        body{
+            background-color: teal;
+            color: white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 name="titulo">Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        /* window.document.writeln(window.location)
+        document.writeln(" | ")
+        document.writeln(document.characterSet) */
+
+        var p1 = document.getElementsByTagName('p')[1]
+        p1.style.color = "red"
+        document.write("Aqui vai o p1: ", p1.innerHTML)
+
+        var d = document.getElementById('msg')
+        d.style.backgroundColor = "blue"
+
+        window.document.getElementsByName('titulo')[0].style.fontFamily = "cursive"
+
+        var da = document.querySelector('div#msg')
+        da.style.color = "black"
+    </script>
+</body>
+</html>
