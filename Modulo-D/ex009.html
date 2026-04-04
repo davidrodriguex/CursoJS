@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais em JS</title>
+</head>
+<body>
+   <h1>SISTEMA DE CIDADANIA</h1>
+   <p id="forms">
+    <label for="icid">Digite sua cidadania:</label>
+    <input type="text" name="cid" id="icid">
+    <p id="btn_verificar"><input type="button" value="Verificar" onclick="cidadania()"></p>
+   </p>
+   <div id="resposta"></div>
+   <script>
+    var cida = document.querySelector('input#icid')
+    var res = document.querySelector('div#resposta')
+    function cidadania(){
+        var a = cida.value
+        res.innerHTML = `Seu pais: <strong>${a}</strong>`
+        if(a == 'Brasil'){
+            res.innerHTML += "<p>Você já é nacionalista.</p>"       
+        }else{
+            res.innerHTML += "<p>Você é estrangeiro.</p>"
+        }
+    }
+   </script> 
+</body>
+</html>

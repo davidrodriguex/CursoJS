@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais em JS</title>
+</head>
+<body>
+    <h1>SISTEMA DE MULTAS</h1>
+    <p id="form_p">
+        <label for="ivel">Digite sua velocidade: </label>
+        <input type="number" name="vel" id="ivel"> km/h
+    </p>
+    <input type="button" value="Calcular" onclick="calc_vel()">
+    <div id="resposta"></div>
+
+    <script>
+        function calc_vel(){
+            var v = document.querySelector('input#ivel')
+            var r = document.getElementById('resposta')
+            var a = Number(v.value)
+            r.innerHTML = `<p>Sua velocidade: <strong>${a} km/h</strong></p>`
+            if(a > 60){
+                r.innerHTML += "<p>Você foi <strong>MULTADO</strong>!</p>"
+            }
+            r.innerHTML += "<P>Use cinto de segurança e pratique direção defensiva.</p>"
+        }
+    </script>
+</body>
+</html>
