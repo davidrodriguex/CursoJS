@@ -32,7 +32,7 @@ section p{
 #form-content p{
     margin-bottom: 15px;
 }
-.foto{ /* Alteração de acordo com o JS */
+#output-image{ /* Alteração de acordo com o JS */
     border-radius: 50%; 
     width: 70%; 
     aspect-ratio: 1/1; 

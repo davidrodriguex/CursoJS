@@ -17,28 +17,42 @@ function verificar(){
         return
     } // Verificar se a idade é negativa ou se o ano de nascimento é maior que o ano atual
 
-    /*if(sexo === 'Masculino'){
-        var genero = 'Homem'
+    if(sexo === 'Masculino'){
+        if(idade >= 0 && idade < 10){
+            var genero = 'criança masculina'
+            saida_imagem.src = 'img/homem_crianca.jpg'
+            saida_imagem.alt = 'Imagem de um menino criança'
+        } else if(idade >= 10 && idade < 21){
+            var genero = 'jovem masculino'
+            saida_imagem.src = 'img/homem_jovem.jpg'
+            saida_imagem.alt = 'Imagem de um jovem masculino'
+        } else if(idade >= 21 && idade < 50){
+            var genero = 'adulto masculino'
+            saida_imagem.src = 'img/homem_adulto.jpg'
+            saida_imagem.alt = 'Imagem de um homem adulto'
+        } else if(idade >= 50){
+            var genero = 'idoso masculino'
+            saida_imagem.src = 'img/homem_idoso.jpg'
+            saida_imagem.alt = 'Imagem de um homem idoso'
+        }
     }else if(sexo === 'Feminino'){
-        var genero = 'Mulher'
-    } // Determinar o gênero com base na seleção do sexo*/
-
-    if(sexo === 'Masculino' && idade >= 0 && idade < 10){
-        var genero = 'criança masculina'
-    }else if(sexo === 'Masculino' && idade >= 10 && idade < 21){
-        var genero = 'jovem masculino'
-    }else if(sexo === 'Masculino' && idade >= 21 && idade < 50){
-        var genero = 'adulto masculino'
-    }else if(sexo === 'Masculino' && idade >= 50){
-        var genero = 'idoso masculino'
-    }else if(sexo === 'Feminino' && idade >= 0 && idade < 10){
-        var genero = 'criança feminina'
-    }else if(sexo === 'Feminino' && idade >= 10 && idade < 21){
-        var genero = 'jovem feminina'
-    }else if(sexo === 'Feminino' && idade >= 21 && idade < 50){
-        var genero = 'adulta feminina'
-    }else if(sexo === 'Feminino' && idade >= 50){
-        var genero = 'idosa feminina'
+        if(idade >= 0 && idade < 10){
+            var genero = 'criança feminina'
+            saida_imagem.src = 'img/mulher_crianca.jpg'
+            saida_imagem.alt = 'Imagem de uma menina criança'
+        } else if(idade >= 10 && idade < 21){
+            var genero = 'jovem feminina'
+            saida_imagem.src = 'img/mulher_jovem.jpg'
+            saida_imagem.alt = 'Imagem de uma jovem feminina'
+        } else if(idade >= 21 && idade < 50){
+            var genero = 'adulta feminina'
+            saida_imagem.src = 'img/mulher_adulta.jpg'
+            saida_imagem.alt = 'Imagem de uma mulher adulta'
+        } else if(idade >= 50){
+            var genero = 'idosa feminina'
+            saida_imagem.src = 'img/mulher_idosa.jpg'
+            saida_imagem.alt = 'Imagem de uma mulher idosa'
+        }
     } // Determinar o gênero e a faixa etária com base na seleção do sexo e na idade
 
     saida_texto.innerHTML = `Detectamos ${genero} de ${idade} anos.`
