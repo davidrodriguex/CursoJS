@@ -22,6 +22,44 @@ section{
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
 }
+section div{
+    text-align: center;
+    padding: 15px;
+}
+section p{
+    text-align: center;
+}
+#form-content p{
+    margin-bottom: 15px;
+}
+.foto{ /* Alteração de acordo com o JS */
+    border-radius: 50%; 
+    width: 70%; 
+    aspect-ratio: 1/1; 
+    object-fit: cover; 
+    overflow: hidden;
+}
+#input-age input{
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#input-btn input{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #26a7a7c4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#input-btn input:hover{
+    background-color: #26a7a7;
+}
 footer{
     color: #fff;
     text-align: center;
