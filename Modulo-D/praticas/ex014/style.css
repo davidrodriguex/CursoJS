@@ -47,6 +47,17 @@ section p{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+#input-age input:focus{
+    border-color: #26a7a7;
+    outline: none;
+}
+#input-sexo label{
+    display: block;
+    margin-bottom: 10px;
+}
+#input-sexo input{
+    margin: 0 10px;
+}
 #input-btn input{
     display: block;
     margin: 20px auto;
