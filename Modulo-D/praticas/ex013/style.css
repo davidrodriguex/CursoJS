@@ -29,6 +29,13 @@ section div{
 section p{
     text-align: center;
 }
+.foto{ /* Alteração de acordo com o JS */
+    border-radius: 50%; 
+    width: 70%; 
+    aspect-ratio: 1/1; 
+    object-fit: cover; 
+    overflow: hidden;
+}
 footer{
     color: #fff;
     text-align: center;
