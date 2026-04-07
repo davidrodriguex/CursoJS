@@ -17,18 +17,18 @@
                 <input type="number" id="iage" name="iage" required>
             </p>
             <p id="input-sexo">
-                <label for="isexo"><strong>Sexo:</strong></label>
-                <input type="radio" name="isexo" id="isexo1" value="Masculino" required> Masculino
-                <input type="radio" name="isexo" id="isexo2" value="Feminino" required> Feminino
+                <strong>Sexo:</strong>
+                <input type="radio" name="isexo" id="masc" value="Masculino" required> 
+                <label for="masc">Masculino</label>
+                <input type="radio" name="isexo" id="fem" value="Feminino" required> 
+                <label for="fem">Feminino</label>
             </p>
             <p id="input-btn">
-                <input type="submit" value="Verificar" id="btn" onclick="verificar()">
+                <input type="button" value="Verificar" id="btn" onclick="verificar()">
             </p>
-            <p>Preencha os dados acima para ver o resultado.</p>
         </div>
         <div id="output-content">
-            <p id="output-text"></p>
-            <img id="output-image" src="" alt="">
+            <p id="output-text">Preencha os dados acima para ver o resultado.</p>
         </div>
     </section>
     <footer>
