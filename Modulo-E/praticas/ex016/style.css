@@ -33,15 +33,10 @@ div#input-values-content p{
 div#input-values-content p label{
     display: block;
 }
-input:valid{
-    border: 2px solid #26a7a7;
-}
-input:invalid{
-    border: 2px solid #ff0000;
-}
 div#input-values-content p.input-numbers input{
     height: 25px;
     border-radius: 5px;
+    border: 2px solid #26a7a7;
 }
 div#input-values-content p#btn input{
     padding: 5px;
