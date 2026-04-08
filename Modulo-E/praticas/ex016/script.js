@@ -9,7 +9,7 @@ function contar(){
     var fim = Number(n_fim.value)
     var passo = Number(n_passo.value)
     
-    if((inicio == 0 && fim == 0) || (inicio == 0) || (fim == 0)){
+    if((!n_inicio.value) || (!n_fim.value) || (!n_passo.value)){
         alert('Faltam dados para contar!')
         saida.innerHTML = 'Impossível contar!'
         return
