@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento Modelo</title>
+    <title>Exercício 018 - Modulo E</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="text-content">Testando...</div>
-        <div id="img-content">Olá!</div>
+        <div id="input-content">
+            <p class="input-group" id="input-number">
+                <input type="number" id="inum" name="inum" placeholder="Digite um número" required>
+            </p>
+            <p class="input-group" id="input-button">
+                <button id="btn">Gerar Tabuada</button>
+            </p>
+        </div>
+        <div id="output-content">
+            <h2>Resultado</h2>
+            <textarea name="result" id="result" readonly></textarea>
+        </div>
     </section>
     <footer>
         <p><a href="https://www.cursoemvideo.com/cursos/" target="_blank">&copy; CursoemVideo</a></p>
         <p><a href="https://github.com/davidrodriguex/" target="_blank">GitHub David Rodrigues</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

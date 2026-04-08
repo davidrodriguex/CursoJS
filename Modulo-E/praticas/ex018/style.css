@@ -15,12 +15,60 @@ header{
     margin: 20px 0;
 }
 section{
+    text-align: center;
     background-color: #fff;
     width: 500px;
     margin: auto;
     padding: 10px;
-    border-radius: 0 10px;
+    border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
+}
+section div{
+    margin: 20px 0;
+}
+.input-group{
+    display:inline-block;
+}
+#input-number{
+    text-align: left;
+    width: 70%;
+}
+#input-number input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+#input-number input:focus{
+    outline: none;
+    border-color: #26a7a7c4;
+}
+#input-button button{
+    background-color: #26a7a7c4;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+#input-button button:hover{
+    background-color: #26a7a7;
+    cursor: pointer;
+}
+#output-content h2{
+    margin: 20px 0;
+    width: 100%;
+    background-color: #26a7a7c4;
+    color: #fff;
+    padding: 5px 0;
+}
+#output-content textarea{
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    resize: none;
 }
 footer{
     color: #fff;
