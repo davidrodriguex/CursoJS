@@ -8,6 +8,17 @@ function contar(){
     var inicio = Number(n_inicio.value)
     var fim = Number(n_fim.value)
     var passo = Number(n_passo.value)
+    
+    if((inicio == 0 && fim == 0) || (inicio == 0) || (fim == 0)){
+        alert('Faltam dados para contar!')
+        saida.innerHTML = 'Impossível contar!'
+        return
+    }
+
+    if(passo <= 0){
+        alert('Passo inválido! Considerando PASSO 1')
+        passo = 1
+    }
 
     saida.innerHTML = 'INICIO > '
     if(inicio <= fim){

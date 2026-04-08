@@ -45,6 +45,7 @@ div#input-values-content p#btn input{
     font-size: 12pt;
     font-weight: bold;
     border-style: none;
+    border-radius: 5px;
 }
 div#input-values-content p#btn input:hover{
     background-color: #26a7a7;
