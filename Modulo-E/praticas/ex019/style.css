@@ -22,16 +22,32 @@ section{
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
 }
-#input-content, #output-content #initial-output{
-    display: flex;
-    justify-content: space-between;
+.icontent{
+    margin-bottom: 20px;
+}
+#inum{
+    width: 50%;
+}
+.line{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
+}
+#initial-output select{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
 }
 .btn{
-    background-color: #26a7a7;
+    background-color: #26a7a7c4;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
+    font-size: 10pt;
+    padding: 5px;
     border-radius: 5px;
+    border-style: none;
+}
+.btn:hover{
+    background-color: #26a7a7;
     cursor: pointer;
 }
 footer{

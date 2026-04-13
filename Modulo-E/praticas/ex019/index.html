@@ -11,24 +11,26 @@
         <h1>Analisador de Números</h1>
     </header>
     <section>
-        <div id="input-content">
+        <div id="input-content" class="icontent">
             <div id="form">
-                <label for="inum">Número(1 - 100)</label>
+                <label for="inum"><strong>Número (1 - 100)</strong></label>
                 <input type="number" name="inum" id="inum">
+                <button type="button" class="btn" id="btn_1">Adicionar</button>
             </div>
-            <button type="button" class="btn">Adicionar</button>
         </div>
-        <div id="output-content">
+        <hr class="line">
+        <div id="output-content" class="icontent">
             <div id="initial-output">
-                <select name="saida_1" id="saida_1"></select>
-                <button type="button" class="btn">Finalizar</button>
+                <select name="saida_1" id="saida_1" size="10"></select>
+                <button type="button" id="btn_2" class="btn">Finalizar</button>
             </div>
-            <div id="final-output"></div>
+            <div id="final-output" class="icontent"></div>
         </div>
     </section>
     <footer>
         <p><a href="https://www.cursoemvideo.com/cursos/" target="_blank">&copy; CursoemVideo</a></p>
         <p><a href="https://github.com/davidrodriguex/" target="_blank">GitHub David Rodrigues</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
