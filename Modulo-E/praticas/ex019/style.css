@@ -27,16 +27,16 @@ section{
 }
 #inum{
     width: 50%;
+    height: 25px;
 }
-.line{
-    margin: auto;
-    margin-bottom: 20px;
-    width: 90%;
+#inum:focus{
+    border: 2px solid #26a7a7;
+    outline: none;
 }
 #initial-output select{
     width: 100%;
-    margin: auto;
     margin-bottom: 10px;
+    border-color: #26a7a7;
 }
 .btn{
     background-color: #26a7a7c4;
@@ -49,6 +49,11 @@ section{
 .btn:hover{
     background-color: #26a7a7;
     cursor: pointer;
+}
+#final-output{
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
 }
 footer{
     color: #fff;
